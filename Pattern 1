@@ -1,0 +1,38 @@
+var firstname = 'Markuss';
+var thisIsAnInteger = 10;
+var thisIsABoolean = true;
+var thisIsAUndefinedVar;
+var thisIsNull = null;
+
+var ellipseX = 400;
+var ellipseY = 400;
+
+function setup() {
+    var canvas = createCanvas(800, 800);
+    canvas.parent("p5container");
+    console.log(thisIsNull);
+}
+
+function draw() {
+    
+    background(220);
+    fill(255, 255, 255)
+    triangle(30, 75, 58, 20, 86, 75);
+    fill("#FF0000");
+    square(400, 400, 400); //Bottom right
+    fill("#FF0000")
+    square(0, 0, 400); //top left
+    fill("#FF00C7")
+    square(0, 400, 400); //bottom left
+    fill("#00E0FF")
+    square(400, 0, 400); //top right
+    fill(255, 255, 255)
+    triangle(200, 200, 400, 400, 0, 400); //top left
+    fill(255, 255, 255)
+    triangle(400, 800, 400, 400, 200, 600); //bottom left
+    fill(255, 255, 255)
+    triangle(600, 600, 400, 400, 800, 400); //bottom right
+    fill(255, 255, 255)
+    triangle(400, 0, 400, 400, 600, 200);
+    console.log(mouseX, mouseY);
+}
